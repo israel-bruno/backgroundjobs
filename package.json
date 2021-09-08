@@ -1,0 +1,23 @@
+{
+  "name": "backgroundjobs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bull": "^3.29.1",
+    "bull-board": "^2.1.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  },
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "nodemon src/server.js",
+    "dev:queue": "nodemon src/queue.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "sucrase": "^3.20.1"
+  }
+}
